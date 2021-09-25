@@ -1,11 +1,13 @@
 import React from 'react';
-import PokemonCard from './PokemonCard';
 import Pokedex from './Pokedex';
 import './index.css';
 
 const App = () => {
   return (
-      <Pokedex/>
+      <>
+        <h1 style={{textAlign:"center"}}>pokedex</h1>
+        <Pokedex/>
+      </>
     );
 }
 
