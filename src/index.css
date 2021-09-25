@@ -23,8 +23,8 @@ body {
 	flex-direction:column;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: flex-start;
-	align-content:flex-start;
+	align-items: center;
+	align-content:center;
 	max-width: 1200px;
 	margin: 0 auto;
 	background: url(./images/spiration-dark.png);
@@ -34,11 +34,12 @@ body {
 }
 .pokemon-card {
 	flex: 1 0 40%;
+	width: 80%;
 	margin: 10px;
 	border: 1px solid transparent;
 	border-radius: 10px;
 	padding: 10px;
-	background: DarkCyan ;
+	background: DarkCyan;
 	transition: all 0.1s ease;
 }
 .pokemon-card:hover {
@@ -49,6 +50,7 @@ body {
 @media (min-width: 580px) {
 	.cards-container {
 		flex-direction:row;
+		align-content:flex-start;
 	}	
 
 	.pokemon-card {
@@ -62,5 +64,3 @@ body {
 		max-width: 20%;
 	}	
 }
-
-
