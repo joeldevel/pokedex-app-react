@@ -12,28 +12,41 @@ code {
     monospace;
 }
 
+body {
+	background: rgb(131,58,180);
+	background: linear-gradient(302deg, rgba(131,58,180,1) 0%, rgba(253,102,29,1) 50%, rgba(252,218,69,1) 100%); 
+	min-height: 100vh;
+}
 
 .cards-container {
 	display: flex;
 	flex-direction:column;
 	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content:flex-start;
 	max-width: 1200px;
 	margin: 0 auto;
+	background: url(./images/spiration-dark.png);
+	background-blend-mode: darken;
+	min-height: 100vh;
+
 }
 .pokemon-card {
 	flex: 1 0 40%;
 	margin: 10px;
-	border: 1px solid black;
+	border: 1px solid transparent;
 	border-radius: 10px;
 	padding: 10px;
-
+	background: DarkCyan ;
+	transition: all 0.1s ease;
+}
+.pokemon-card:hover {
+	box-shadow: 1px 1px 10px rgba(16,254,245,1);
+	background: whitesmoke;
 }
 
 @media (min-width: 580px) {
-	body {
-		/*background-color: red;*/
-	}
-
 	.cards-container {
 		flex-direction:row;
 	}	
