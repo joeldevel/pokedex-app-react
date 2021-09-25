@@ -10,7 +10,7 @@ const Pokedex = () => {
 	},[]);
 
 	return (
-		<div className="">
+		<div className="cards-container">
 			{pokemons? pokemons.map(p=><PokemonCard key={p.id} pokemonData={p}/>): <p>loading</p>}
 		</div>
 	);

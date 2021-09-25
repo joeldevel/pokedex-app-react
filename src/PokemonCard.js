@@ -2,7 +2,7 @@ import React from 'react';
 
 const PokemonCard = (props) => {
 	return (
-		<div style={{border: "1px solid black", margin: 10}}>
+		<div className="pokemon-card">
 			<h1>{props.pokemonData.name}</h1>
 			<img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${props.pokemonData.id}.png`}/>
 			<p>type: {props.pokemonData.type}</p>
