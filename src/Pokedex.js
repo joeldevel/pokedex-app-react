@@ -11,11 +11,7 @@ const Pokedex = () => {
 
 	return (
 		<div className="">
-			<h1>{pokemons ? pokemons[0].name: 'no pokemons'}</h1>
-	      	<PokemonCard/>
-	      	<PokemonCard/>
-	      	<PokemonCard/>
-	      	<PokemonCard/>
+			{pokemons? pokemons.map(p=><PokemonCard key={p.id} pokemonData={p}/>): <p>loading</p>}
 		</div>
 	);
 };
