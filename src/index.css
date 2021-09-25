@@ -15,11 +15,39 @@ code {
 
 .cards-container {
 	display: flex;
+	flex-direction:column;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 .pokemon-card {
-	flex: 1 1 auto;
+	flex: 1 0 40%;
 	margin: 10px;
 	border: 1px solid black;
 	border-radius: 10px;
 	padding: 10px;
+
 }
+
+@media (min-width: 580px) {
+	body {
+		/*background-color: red;*/
+	}
+
+	.cards-container {
+		flex-direction:row;
+	}	
+
+	.pokemon-card {
+		flex: 1 0 33%;
+	}
+}
+
+@media (min-width: 900px) {
+	.pokemon-card {
+		flex: 1 0 30%;
+		max-width: 20%;
+	}	
+}
+
+
