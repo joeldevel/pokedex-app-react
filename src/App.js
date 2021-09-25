@@ -1,16 +1,11 @@
 import React from 'react';
 import PokemonCard from './PokemonCard';
+import Pokedex from './Pokedex';
 
 const App = () => {
   return (
-    <div>
-      <h1>hello</h1>
-      <PokemonCard/>
-      <PokemonCard/>
-      <PokemonCard/>
-      <PokemonCard/>
-    </div>
-  );
+      <Pokedex/>
+    );
 }
 
 export default App;
